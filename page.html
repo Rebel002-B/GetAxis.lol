@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Focus</title>
+  <link rel="icon" href="data:,">
+  <script src="auth.js"></script>
+  <script>Axis.require("Index.html");</script>
+  <link rel="stylesheet" href="hub.css">
+</head>
+<body>
+  <header class="mast">
+    <div class="word" aria-label="Axis"><span style="--i:0">A</span><span style="--i:1">X</span><span style="--i:2">I</span><span style="--i:3">S</span></div>
+    <div class="count" id="count"></div>
+    <div class="clock" id="clock">session 00:00</div>
+    <div class="sweep"></div>
+  </header>
+  <nav class="bar" id="bar">
+    <button data-cat="all" aria-pressed="true">all</button>
+    <button data-cat="action" aria-pressed="false">action</button>
+    <button data-cat="arcade" aria-pressed="false">arcade</button>
+    <button data-cat="puzzle" aria-pressed="false">puzzle</button>
+    <span class="soon">assistant <em>Coming soon!</em></span>
+    <span class="soon">downloads <em>Coming soon!</em></span>
+    <input id="q" type="text" placeholder="search ( / )" spellcheck="false" autocomplete="off">
+  </nav>
+  <div class="resume" id="resume" hidden></div>
+  <ol class="list" id="list"></ol>
+  <div class="empty" id="empty" hidden>nothing matches.</div>
+  <div class="foot">
+    <span>up/down or j/k to move &middot; enter to launch &middot; / to search</span>
+    <label class="tabname">tab name <input id="tabname" type="text" maxlength="40" spellcheck="false" autocomplete="off" placeholder="Focus"></label>
+  </div>
+  <script src="page.js"></script>
+</body>
+</html>

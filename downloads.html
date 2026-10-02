@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Focus</title>
+  <link rel="icon" href="data:,">
+  <script src="auth.js"></script>
+  <script>Axis.require("Index.html");</script>
+  <link rel="stylesheet" href="hub.css">
+  <link rel="stylesheet" href="chat.css">
+  <style>
+    .dl { max-width: 900px; margin: 0 auto; padding: 18px 4vw; width: 100%; }
+    .dl h2 { font-family: var(--sans); font-size: 34px; margin: 6px 0 18px; letter-spacing: -.01em; }
+    .dl ul { list-style: none; margin: 0; padding: 0; }
+    .dl li { opacity: 0; animation: fade .5s var(--ease) forwards; animation-delay: calc(var(--i) * 45ms); }
+    .dl li a { display: flex; justify-content: space-between; gap: 20px; padding: 11px 0; border-bottom: 1px solid var(--rule); color: var(--ink); text-decoration: none; transition: color .15s, padding-left .18s var(--ease); }
+    .dl li a:hover { color: var(--accent); padding-left: 10px; }
+    .dl li span { color: var(--dim); white-space: nowrap; }
+    .dl .none { color: var(--dim); }
+  </style>
+</head>
+<body class="chat">
+  <header class="ctop">
+    <span class="brand">Axis</span>
+    <span class="cname">/ downloads</span>
+    <a id="back" href="page.html">&larr; back</a>
+  </header>
+  <main class="dl">
+    <h2>Coming soon!</h2>
+    <p class="none">downloads aren't available yet.</p>
+  </main>
+  <script src="downloads.js"></script>
+</body>
+</html>
